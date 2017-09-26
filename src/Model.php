@@ -24,18 +24,20 @@ class Model
         foreach($namespacesAndPaths as $namespace => $path)
         {
             $fullBasePath = base_path() . $path;
-            
-            $results = scandir($fullBasePath);
-            foreach ($results as $result) {
-                if ($result === '.' or $result === '..') continue;
-                $filename = $fullBasePath . '/' . $result;            
-                if (is_dir($filename)) {
-                    // This requires only model files to be present in subfolders, anything else will brake it.
-                    //$models = array_merge($models, $this->models($filename));
-                }else{
-                    $class = $namespace . '\\' . substr($result,0,-4);
-                    $models->push(new Model($class));
-                    
+            if(file_exists($fullBasePath))
+            {
+                $results = scandir($fullBasePath);
+                foreach ($results as $result) {
+                    if ($result === '.' or $result === '..') continue;
+                    $filename = $fullBasePath . '/' . $result;            
+                    if (is_dir($filename)) {
+                        // This requires only model files to be present in subfolders, anything else will brake it.
+                        //$models = array_merge($models, $this->models($filename));
+                    }else{
+                        $class = $namespace . '\\' . substr($result,0,-4);
+                        $models->push(new Model($class));
+                        
+                    }
                 }
             }
         }
