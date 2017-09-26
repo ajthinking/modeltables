@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        
+        "yajra/laravel-datatables-oracle": "~8.0"        
     },
     "extra": {
         "laravel": {
