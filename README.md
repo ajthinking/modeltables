@@ -1,6 +1,8 @@
 # ModelTables for Laravel
 I found myself constantly going back to tinker or some db tool to check the data in my tables. This package detects any models on the fly and put the data into neat tables.
 
+<img src="https://image.ibb.co/b2b23k/modeltables.png" alt="modeltables" border="0">
+
 ## Quickstart
 ```
 composer require ajthinking/modeltables
