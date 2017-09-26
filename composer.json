@@ -1,0 +1,28 @@
+{
+    "name": "ajthinking/modeltables",
+    "description": "auto detection of models and redering them into tables",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anders Jürisoo",
+            "email": "jurisoo@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yajra/laravel-datatables-oracle": "~8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ajthinking\\ModelTables\\ModelTablesServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Ajthinking\\ModelTables\\": "src/"
+        }
+    }
+}
