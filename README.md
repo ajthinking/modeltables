@@ -1,4 +1,9 @@
 # ModelTables for Laravel
+[![Latest Stable Version](https://poser.pugx.org/ajthinking/modeltables/v/stable)](https://packagist.org/packages/ajthinking/modeltables)
+[![Total Downloads](https://poser.pugx.org/ajthinking/modeltables/downloads)](https://packagist.org/packages/ajthinking/modeltables)
+[![License](https://poser.pugx.org/ajthinking/modeltables/license)](https://packagist.org/packages/ajthinking/modeltables)
+[![composer.lock](https://poser.pugx.org/ajthinking/modeltables/composerlock)](https://packagist.org/packages/ajthinking/modeltables)
+<br>
 I found myself constantly going back to tinker or some db tool to check the data in my tables. This package detects any models on the fly and put the data into neat tables.
 
 <img src="https://image.ibb.co/b2b23k/modeltables.png" alt="modeltables" border="0">
