@@ -8,6 +8,8 @@ I found myself constantly going back to tinker or some db tool to check the data
 
 <img src="https://image.ibb.co/b2b23k/modeltables.png" alt="modeltables" border="0">
 
+Enjoy!!
+
 ## Quickstart
 ```
 composer require ajthinking/modeltables
